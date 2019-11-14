@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">EgyNews</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="artical2">
+        "I am android developer, i am trying to introduce a different and completely new educational ideas in the career of mobile application development , aims to support developers to achieve the highest degrees of advantage in the career, you can follow me through this links in below.
+        "
+    </string>
+
+    <string name="articale3">"we care about your personal data, so we have prepared this privacy policy to explain how we collect, use and share it.this privacy policy details the personal data revceives about you, how we process it and your rights and obligations in relation to your personal data"
+    </string>
+    <string name="articale4">"this privacy policy explain how we collect, use and share your personal data, through the registration process, you will provide us with your name and email."
+    </string>
+    <string name="articale5">"when you use the app you can share this app with you friends and this process does not mean that you share the app with data so we care about sharing the app without the data."
+    </string>
+
+    <string name="field1">نسيت كلمه السر او اريد تغييرها</string>
+    <string name="field2">هل يمكني تغيير البريد الالكتروني</string>
+    <string name="field3">لدي فكره لتطوير التطبيق,كيف ارسلها لكم؟ </string>
+
+    <string-array name="field1">
+        <item>إذا دخلت من القائمه الفرعيه علي الاعدادات الخاصه بك ستجد زرار اسمه تغيير كلمه السر-اضغط عليه ستخرج لك شاشه لتغير كلمه السر</item>
+    </string-array>
+    <string-array name="field2">
+        <item>لا يوجد هذا الاختيار حاليا ولكن نحن نعمل علي ذالك في التحديثات القادمه</item>
+    </string-array>
+
+    <string-array name="field3">
+        <item>اذا كانت لديك فكره تريد اخبارنا بها, تفضل مشكورا بالتوجه الي زرار اتصل بنا من القائمه الفرعيه تم اكتب فكرتك وارسلها لنا ليتم دراستها </item>
+    </string-array>
+    <string name="facebook_app_id">894882580618030</string>
+</resources>

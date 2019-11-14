@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/images"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round_spladhscreen"
+        android:alpha="0.8"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/newss"
+            android:layout_gravity="center"
+            app:civ_border_color="#726081"
+            app:civ_border_width="2dp"
+            android:elevation="25dp"
+            android:id="@+id/image1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/splashripple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/image1"
+            android:layout_marginTop="25dp"
+            android:layout_centerInParent="true"
+            >
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_textsplash"
+                >
+
+                <TextView
+                    android:id="@+id/splashText_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="EgyNews"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

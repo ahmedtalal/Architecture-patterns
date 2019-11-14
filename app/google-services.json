@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "230114427830",
+    "firebase_url": "https://egyptnews-9c266.firebaseio.com",
+    "project_id": "egyptnews-9c266",
+    "storage_bucket": "egyptnews-9c266.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230114427830:android:824408c5ca3b8a3a",
+        "android_client_info": {
+          "package_name": "ahmed.javcoder.egynews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230114427830-2jgus2526fkhdjtqg393hifgc2irj41u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ahmed.javcoder.egynews",
+            "certificate_hash": "196a53cb7acc706089db6b94e4d5f9621fa2bb19"
+          }
+        },
+        {
+          "client_id": "230114427830-4t94gt6nkeurk9384491f9kmmi7ucvos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiM7cHw3nI5FArXUJ_AyRifVHWkZfcp5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230114427830-4t94gt6nkeurk9384491f9kmmi7ucvos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

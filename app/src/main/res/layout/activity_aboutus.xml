@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutusActivity"
+    android:orientation="vertical"
+    android:background="@drawable/images"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round_spladhscreen"
+        android:alpha="0.8"
+        >
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolobaron_ID"
+            android:elevation="13dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:title="About Us "
+            app:titleMarginStart="10dp"
+            />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                android:layoutAnimation="@anim/layout_animation_up"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    app:civ_border_color="#FFF"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/myphoto"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ahmed Talal"
+                    android:textColor="#DDDD"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artical2"
+                    android:textSize="16sp"
+                    android:textColor="#DDDD"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:fontFamily="monospace"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/smallfacebook"
+                        android:layout_margin="10dp"
+                        android:onClick="facebooklink"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/smallgoogle"
+                        android:layout_margin="10dp"
+                        android:onClick="Googlelink"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/youtube"
+                        android:layout_margin="10dp"
+                        android:onClick="youtubeLink"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/twitter"
+                        android:layout_margin="10dp"
+                        android:onClick="twitterlink"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/twitter"
+                        android:layout_margin="10dp"
+                        android:onClick="gethihLink"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

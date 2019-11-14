@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/images"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_spladhscreen"
+        android:alpha="0.8"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    android:id="@+id/toolbaro"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In"
+                    android:textColor="#ffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/logo"
+                    android:layout_below="@id/toolbaro"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:id="@+id/head"
+                    android:text="Sign in with "
+                    android:textColor="#FFFF"
+                    android:textSize="15dp"
+                    android:padding="5dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/head"
+                    android:id="@+id/liner"
+                    >
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/facebookLogin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/RippleStyle"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            >
+
+                            <Button
+                                android:id="@+id/facebook"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Facebook"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:fontFamily="monospace"
+                                android:gravity="end|center"
+                                android:paddingRight="10dp"
+                                android:textColor="#fff"
+                                android:background="@drawable/rounded_view"
+                                android:textAllCaps="false"
+                                android:drawableLeft="@drawable/smallfacebook"
+                                android:paddingLeft="10dp"
+                                />
+
+                        </LinearLayout>
+
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/googleLogin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/RippleStyle"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            >
+
+                            <Button
+                                android:id="@+id/google"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Google"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:fontFamily="monospace"
+                                android:gravity="end|center"
+                                android:paddingRight="10dp"
+                                android:textColor="#fff"
+                                android:background="@drawable/rounded_textview"
+                                android:drawableLeft="@drawable/smallgoogle"
+                                android:paddingLeft="10dp"
+                                android:textAllCaps="false"
+                                />
+
+                        </LinearLayout>
+
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFF"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/liner"
+                    android:id="@+id/view"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:id="@+id/head1"
+                    android:text="OR your email"
+                    android:textColor="#FFFF"
+                    android:textSize="15dp"
+                    android:padding="5dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/head1"
+                    >
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        app:hintEnabled="false"
+                        android:id="@+id/logintextinput1"
+                        >
+
+                        <EditText
+                            android:id="@+id/emailno_ID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Email"
+                            android:textColorHint="#FFFF"
+                            android:background="@drawable/round_textsplash"
+                            android:padding="16dp"
+                            android:textSize="15sp"
+                            android:fontFamily="monospace"
+                            android:inputType="textEmailAddress"
+                            android:textColor="#FFFF"
+                            android:drawableRight="@drawable/ic_email"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="#FFFF"
+                        app:hintEnabled="false"
+                        android:id="@+id/logintextinput2"
+                        >
+                        <EditText
+                            android:id="@+id/pass_ID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Password"
+                            android:textColorHint="#FFFF"
+                            android:background="@drawable/round_textsplash"
+                            android:padding="16dp"
+                            android:textSize="15sp"
+                            android:fontFamily="monospace"
+                            android:inputType="textPassword"
+                            android:textColor="#FFFF"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot password?"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14sp"
+                        android:textColor="#FFFF"
+                        android:gravity="end"
+                        android:paddingRight="3dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:id="@+id/forgetpassword"
+                        android:layout_gravity="end"
+                        />
+
+
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/splashripple"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/RippleStyle"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            >
+
+                            <Button
+                                android:id="@+id/login_ID"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Login"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:fontFamily="monospace"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:onClick="LogIn"
+                                android:background="@drawable/round_textsplash"
+                                android:textAllCaps="false"
+                                />
+
+                        </LinearLayout>
+
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_below="@id/logintextinput2"
+                        android:padding="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:text="Do not  have an account ?"
+                            android:layout_weight="4"
+                            android:textColor="#FFFF"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/siginBtn_ID"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="Sign up"
+                            android:textStyle="bold"
+                            android:textColor="#FFEC6E"
+                            android:textSize="13sp"
+                            android:onClick="SignUn"
+                            android:fontFamily="monospace"
+                            android:gravity="start|center"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

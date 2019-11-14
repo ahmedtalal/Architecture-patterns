@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactusActivity"
+    android:orientation="vertical"
+    android:background="@drawable/images"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round_spladhscreen"
+        android:alpha="0.8"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/contactusToolbar"
+            app:title="Contact Us"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:fillViewport="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                android:layoutAnimation="@anim/layout_animation_up"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We are always happy to hear fom you"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:textColor="#FFFF"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="We will send you the response to the email you provide below."
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:textColorHint="#B8B8B8"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/round_textsplash"
+                    android:layout_margin="20dp"
+                    android:elevation="15dp"
+                    android:hint="Enter your Email"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/emailField_ID"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#FFFF"
+                    android:textColorHint="#FFFF"
+                    />
+
+                <EditText
+                    android:id="@+id/messageField"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/round_textsplash"
+                    android:layout_margin="20dp"
+                    android:scrollbars="vertical"
+                    android:elevation="15dp"
+                    android:hint="Type your message here"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:textColor="#FFFF"
+                    android:textColorHint="#FFFF"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_textsplash"
+                    android:layout_margin="20dp"
+                    android:elevation="8dp"
+                    >
+
+                    <Button
+                        android:id="@+id/sendBtn_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_textsplash"
+                        android:text="Send Message"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:fontFamily="monospace"
+                        android:textStyle="bold"
+                        android:elevation="12dp"
+                        android:paddingTop="10dp"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

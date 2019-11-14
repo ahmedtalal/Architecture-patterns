@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SportsActivity"
+    android:orientation="vertical"
+    android:background="@drawable/images"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_spladhscreen"
+        android:alpha="0.82"
+        >
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/businesstoolobaro_ID"
+            android:elevation="13dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Business News "
+            app:titleMarginStart="40dp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/businessRecyclerview_ID"
+            android:layout_below="@id/businesstoolobaro_ID"
+            tools:listitem="@layout/sports_view"
+            />
+
+        <ProgressBar
+            android:id="@+id/businessprogressbar_ID"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

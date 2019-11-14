@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#163A55</color>
+    <color name="colorPrimaryDark">#0D324D</color>
+    <color name="colorAccent">#E84F4F</color>
+    <color name="tritic1">#35465f</color>
+    <color name="tritic2">#2d3b51</color>
+    <color name="trictic3">#222f40</color>
+    <color name="trictic4">#5C8F6D</color>
+    <color name="one">#615C5C</color>
+</resources>

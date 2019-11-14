@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/images"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_spladhscreen"
+        android:alpha="0.8"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="#ffff"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:padding="15dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="25dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:hintEnabled="false"
+                android:id="@+id/textinput1"
+                >
+                <EditText
+                    android:id="@+id/user_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Username"
+                    android:textColorHint="#FFFF"
+                    android:background="@drawable/round_textsplash"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:fontFamily="monospace"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFF"
+                    android:drawableRight="@drawable/ic_person"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false"
+                android:layout_below="@+id/textinput1"
+                android:id="@+id/textinput2"
+                app:passwordToggleTint="#FFFF"
+                >
+                <EditText
+                    android:id="@+id/pass_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"
+                    android:textColorHint="#FFFF"
+                    android:background="@drawable/round_textsplash"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:fontFamily="monospace"
+                    android:inputType="textPassword"
+                    android:textColor="#FFFF"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#FFFF"
+                app:hintEnabled="false"
+                android:layout_below="@+id/textinput2"
+                android:id="@+id/textinput3"
+                >
+                <EditText
+                    android:id="@+id/confirmpass_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Confirm Password"
+                    android:textColorHint="#FFFF"
+                    android:background="@drawable/round_textsplash"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:fontFamily="monospace"
+                    android:inputType="textPassword"
+                    android:textColor="#FFFF"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                app:hintEnabled="false"
+                android:layout_below="@+id/textinput3"
+                android:id="@+id/textinput4"
+                >
+                <EditText
+                    android:id="@+id/gmail_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email"
+                    android:textColorHint="#FFFF"
+                    android:background="@drawable/round_textsplash"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:fontFamily="monospace"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#FFFF"
+                    android:drawableRight="@drawable/ic_email"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:id="@+id/lino"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="Already Have an account ?"
+                    android:layout_weight="4"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:textSize="12sp"
+                    android:gravity="start|center"
+                    />
+                <TextView
+                    android:id="@+id/siginBtn_ID"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:text="Sign in"
+                    android:textStyle="bold"
+                    android:textColor="#FFEE6C"
+                    android:textSize="13sp"
+                    android:onClick="SignIn"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/splashripple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/RippleStyle"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    >
+
+                    <Button
+                        android:id="@+id/re"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Register"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:onClick="registero"
+                        android:background="@drawable/round_textsplash"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
