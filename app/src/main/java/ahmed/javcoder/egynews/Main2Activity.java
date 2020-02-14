@@ -1,31 +1,20 @@
 package ahmed.javcoder.egynews;
 
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.antonyt.infiniteviewpager.InfinitePagerAdapter;
-import com.antonyt.infiniteviewpager.InfiniteViewPager;
-import com.balysv.materialripple.MaterialRippleLayout;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -40,16 +29,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
-
-import java.util.Timer;
-import java.util.TimerTask;
-
 import ahmed.javcoder.egynews.Adapters.RecycloAdapter;
 import ahmed.javcoder.egynews.Adapters.RecycloAdapter2;
 import ahmed.javcoder.egynews.Models.Users;
 import de.hdodenhof.circleimageview.CircleImageView;
-import me.didik.component.StickyNestedScrollView;
-import me.relex.circleindicator.CircleIndicator;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -151,7 +134,7 @@ public class Main2Activity extends AppCompatActivity {
                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
-                                        Toast.makeText(Main2Activity.this,"Successfully signed out",Toast.LENGTH_SHORT).show();
+                                        //Toast.makeText(Main2Activity.this,"Successfully signed out",Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(Main2Activity.this, RegisterActivity.class));
                                         finish();
                                     }
@@ -221,6 +204,7 @@ public class Main2Activity extends AppCompatActivity {
                     .into(imageViewHeader);
         }
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

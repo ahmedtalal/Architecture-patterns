@@ -70,45 +70,6 @@
                     android:layout_below="@id/head"
                     android:id="@+id/liner"
                     >
-
-                    <com.balysv.materialripple.MaterialRippleLayout
-                        android:id="@+id/facebookLogin"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        style="@style/RippleStyle"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="10dp"
-                        >
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            >
-
-                            <Button
-                                android:id="@+id/facebook"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="Facebook"
-                                android:textSize="20sp"
-                                android:textStyle="bold"
-                                android:fontFamily="monospace"
-                                android:gravity="end|center"
-                                android:paddingRight="10dp"
-                                android:textColor="#fff"
-                                android:background="@drawable/rounded_view"
-                                android:textAllCaps="false"
-                                android:drawableLeft="@drawable/smallfacebook"
-                                android:paddingLeft="10dp"
-                                />
-
-                        </LinearLayout>
-
-                    </com.balysv.materialripple.MaterialRippleLayout>
-
                     <com.balysv.materialripple.MaterialRippleLayout
                         android:id="@+id/googleLogin"
                         android:layout_width="0dp"
@@ -195,7 +156,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="Email"
-                            android:textColorHint="#FFFF"
+                            android:textColorHint="#C5C5C5"
                             android:background="@drawable/round_textsplash"
                             android:padding="16dp"
                             android:textSize="15sp"
@@ -223,7 +184,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="Password"
-                            android:textColorHint="#FFFF"
+                            android:textColorHint="#C5C5C5"
                             android:background="@drawable/round_textsplash"
                             android:padding="16dp"
                             android:textSize="15sp"
@@ -331,9 +292,7 @@
 
             </RelativeLayout>
 
-
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
-
 </RelativeLayout>

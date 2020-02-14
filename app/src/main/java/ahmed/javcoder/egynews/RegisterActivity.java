@@ -10,8 +10,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.balysv.materialripple.MaterialRippleLayout;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,7 +21,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import ahmed.javcoder.egynews.Models.Users;
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -35,17 +32,19 @@ public class RegisterActivity extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase ;
     DatabaseReference databaseReference ;
     ProgressDialog progressDialog ;
-
     @Override
     protected void onStart() {
         GoogleSignInAccount googleSignInAccount = GoogleSignIn.getLastSignedInAccount(this) ;
         FirebaseUser user =  FirebaseAuth.getInstance().getCurrentUser() ;
         if(user != null)
         {
+            Toast.makeText(RegisterActivity.this , "your are logged in" , Toast.LENGTH_LONG).show();
             startActivity(new Intent(getApplicationContext() , Main2Activity.class));
 
         }else if (googleSignInAccount != null)
         {
+
+            Toast.makeText(RegisterActivity.this , "your are logged in" , Toast.LENGTH_LONG).show();
             startActivity(new Intent(getApplicationContext() , Main2Activity.class));
         }
         super.onStart();
@@ -133,7 +132,7 @@ public class RegisterActivity extends AppCompatActivity {
                         if (task.isSuccessful())
                         {
                             String id  = task.getResult().getUser().getUid() ;
-                            SaveUser(egmail , euse  , id); ;
+                            SaveUser(egmail , euse  , id);
                         }else
                         {
                             Toast.makeText(getApplicationContext(),task.getException().getMessage() , Toast.LENGTH_LONG).show();
@@ -144,7 +143,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void SaveUser(String egmail, String euse, String id) {
-        Users usermodel = new Users(egmail , euse) ;
+        Users usermodel = new Users(egmail , euse , "null" , "null" , "null") ;
         databaseReference .child("Users").child(id).setValue(usermodel) ;
         startActivity(new Intent(getApplicationContext() , Main2Activity.class));
         progressDialog.dismiss();

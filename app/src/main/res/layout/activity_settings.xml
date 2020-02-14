@@ -83,7 +83,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="3"
-                                    android:src="@drawable/images"
+                                    android:src="@drawable/about_us"
+                                    android:scaleType="centerCrop"
                                     />
                                 <TextView
                                     android:layout_width="match_parent"
@@ -130,7 +131,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="3"
-                                    android:src="@drawable/images"
+                                    android:src="@drawable/privacypolicy"
+                                    android:scaleType="centerCrop"
                                     />
                                 <TextView
                                     android:layout_width="match_parent"
@@ -185,7 +187,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="3"
-                                    android:src="@drawable/images"
+                                    android:src="@drawable/ic_faqs"
                                     />
                                 <TextView
                                     android:layout_width="match_parent"
@@ -232,7 +234,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="3"
-                                    android:src="@drawable/images"
+                                    android:src="@drawable/forgot"
                                     />
                                 <TextView
                                     android:layout_width="match_parent"

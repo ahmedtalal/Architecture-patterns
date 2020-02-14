@@ -2,7 +2,6 @@ package ahmed.javcoder.egynews;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -15,8 +14,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.balysv.materialripple.MaterialRippleLayout;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -27,26 +24,26 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
 
 public class LoginActivity extends AppCompatActivity {
 
     EditText loginEmailField , loginPasswordField ;
     Toolbar toolbar ;
     TextView forgotPassword ;
-    Button facebookBtn , googleBtn ;
+    Button  googleBtn ;
     GoogleSignInClient googleSignInclient;
+    CallbackManager callbackManager ;
 
     private FirebaseAuth auth ;
     private FirebaseUser user ;
     private static final int DEFAULT_SIGN_IN = 0 ;
+    private static final String TAG = "FACEBOOK_LOG" ;
 
     private String resultEmail , resutlPassword ;
 
     private ProgressDialog progressDialog ;
 
-    @Override
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
@@ -55,7 +52,6 @@ public class LoginActivity extends AppCompatActivity {
         loginPasswordField = findViewById(R.id.pass_ID) ;
         toolbar = findViewById(R.id.toolbaro) ;
         forgotPassword = findViewById(R.id.forgetpassword) ;
-        facebookBtn = findViewById(R.id.facebook) ;
         googleBtn = findViewById(R.id.google) ;
 
 
@@ -96,7 +92,6 @@ public class LoginActivity extends AppCompatActivity {
                 SignIn();
             }
         });
-
     }
 
     private void SignIn() {
@@ -106,13 +101,15 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
         if (requestCode == DEFAULT_SIGN_IN){
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data) ;
             handleSignInResult(task) ;
         }
+
+        super.onActivityResult(requestCode, resultCode, data);
     }
+
+
 
     private void handleSignInResult(Task<GoogleSignInAccount> task) {
         try {

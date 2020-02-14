@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.balysv.materialripple.MaterialRippleLayout;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -20,6 +18,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import ahmed.javcoder.egynews.Models.Users;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -112,6 +113,8 @@ public class SettingsActivity extends AppCompatActivity {
                     Users userModel = dataSnapshot.getValue(Users.class) ;
                     Picasso.get()
                             .load(userModel.getImage())
+                            .placeholder(R.drawable.ic_user)
+                            .error(R.drawable.ic_user)
                             .into(circleImageView);
                 }
 
@@ -123,8 +126,11 @@ public class SettingsActivity extends AppCompatActivity {
         }else if (gsa != null){
             Picasso.get()
                     .load(gsa.getPhotoUrl())
+                    .placeholder(R.drawable.ic_user)
+                    .error(R.drawable.ic_user)
                     .into(circleImageView);
         }
+
     }
 
     @Override

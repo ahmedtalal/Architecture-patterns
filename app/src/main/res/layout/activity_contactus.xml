@@ -44,7 +44,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="We are always happy to hear fom you"
+                    android:text="We are always happy to hear from you"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:fontFamily="monospace"
@@ -81,7 +81,7 @@
                     android:id="@+id/emailField_ID"
                     android:inputType="textEmailAddress"
                     android:textColor="#FFFF"
-                    android:textColorHint="#FFFF"
+                    android:textColorHint="#C5C5C5"
                     />
 
                 <EditText
@@ -96,7 +96,7 @@
                     android:gravity="start"
                     android:padding="10dp"
                     android:textColor="#FFFF"
-                    android:textColorHint="#FFFF"
+                    android:textColorHint="#C5C5C5"
                     />
 
                 <LinearLayout
